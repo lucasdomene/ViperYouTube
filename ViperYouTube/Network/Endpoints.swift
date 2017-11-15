@@ -1,5 +1,5 @@
 //
-//  PlaylistDataManager.swift
+//  Endpoints.swift
 //  ViperYouTube
 //
 //  Created by Lucas Domene Firmo on 15/11/17.
@@ -7,8 +7,3 @@
 //
 
 import Foundation
-
-class PlaylistDataManager {
-    
-    
-}
