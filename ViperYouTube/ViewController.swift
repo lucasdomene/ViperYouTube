@@ -12,14 +12,10 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let playlistDataManager = PlaylistDataManager()
+        playlistDataManager.fetchPlaylists(forChannel: "UCE_M8A5yxnLfW0KghEeajjw")
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
 

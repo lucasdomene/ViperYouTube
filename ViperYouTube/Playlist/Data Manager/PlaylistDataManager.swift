@@ -7,8 +7,16 @@
 //
 
 import Foundation
+import Alamofire
 
 class PlaylistDataManager {
     
+    func fetchPlaylists(forChannel channelID: String) {
+        Alamofire.request(Endpoints.Playlists.fetch(part: "snippet", channelID: channelID).url, method: .get)
+            .validate()
+            .responseJSON { response in
+            print(response)
+        }
+    }
     
 }

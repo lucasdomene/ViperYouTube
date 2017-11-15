@@ -19,7 +19,7 @@ protocol Endpoint {
     var parameters: String { get }
 }
 
-enum Endpoint {
+enum Endpoints {
     
     enum Playlists: Endpoint {
         case fetch(part: String, channelID: String)
@@ -34,7 +34,7 @@ enum Endpoint {
         public var url: String {
             switch self {
             case .fetch:
-                return "\(API.baseUrl)\(path)\(parameters)"
+                return "\(API.baseURL)\(path)\(parameters)"
             }
         }
         
