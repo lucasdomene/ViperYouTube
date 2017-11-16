@@ -7,10 +7,20 @@
 //
 
 import Foundation
+import ObjectMapper
 
 struct Playlist {
-    var id: String
-    var title: String
-    var thumbnail: Thumbnail
+    var id: String = ""
+    var title: String = ""
+    var thumbnail: String = ""
 }
 
+extension Playlist: Mappable {
+    init?(map: Map) {}
+    
+    mutating func mapping(map: Map) {
+        id <- map["id"]
+        title <- map["title"]
+        thumbnail <- map["thumbnails.medium.url"]
+    }
+}
