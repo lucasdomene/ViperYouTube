@@ -17,6 +17,7 @@
 		A017003C1FBCC44C00BB262F /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = A017003B1FBCC44C00BB262F /* Endpoints.swift */; };
 		A017003F1FBCCE3E00BB262F /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = A017003E1FBCCE3E00BB262F /* Playlist.swift */; };
 		A01700481FBE569C00BB262F /* PlaylistViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01700471FBE569C00BB262F /* PlaylistViewProtocol.swift */; };
+		A017004C1FBE570100BB262F /* PlaylistPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A017004B1FBE570100BB262F /* PlaylistPresenterProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		A017003B1FBCC44C00BB262F /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
 		A017003E1FBCCE3E00BB262F /* Playlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
 		A01700471FBE569C00BB262F /* PlaylistViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistViewProtocol.swift; sourceTree = "<group>"; };
+		A017004B1FBE570100BB262F /* PlaylistPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistPresenterProtocol.swift; sourceTree = "<group>"; };
 		D34675AB531599B5B9CA63B6 /* Pods_ViperYouTube.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViperYouTube.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7A0566813978638806A08BC /* Pods-ViperYouTube.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperYouTube.release.xcconfig"; path = "Pods/Target Support Files/Pods-ViperYouTube/Pods-ViperYouTube.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -154,6 +156,7 @@
 		A01700431FBE566A00BB262F /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				A017004B1FBE570100BB262F /* PlaylistPresenterProtocol.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				A017003C1FBCC44C00BB262F /* Endpoints.swift in Sources */,
 				A01700241FBCC0BF00BB262F /* AppDelegate.swift in Sources */,
 				A017003F1FBCCE3E00BB262F /* Playlist.swift in Sources */,
+				A017004C1FBE570100BB262F /* PlaylistPresenterProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
