@@ -18,6 +18,9 @@
 		A017003F1FBCCE3E00BB262F /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = A017003E1FBCCE3E00BB262F /* Playlist.swift */; };
 		A01700481FBE569C00BB262F /* PlaylistViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01700471FBE569C00BB262F /* PlaylistViewProtocol.swift */; };
 		A017004C1FBE570100BB262F /* PlaylistPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A017004B1FBE570100BB262F /* PlaylistPresenterProtocol.swift */; };
+		A017004E1FBE57BB00BB262F /* PlaylistInteractorInputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A017004D1FBE57BB00BB262F /* PlaylistInteractorInputProtocol.swift */; };
+		A01700501FBE57C600BB262F /* PlaylistInteractorOutputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A017004F1FBE57C600BB262F /* PlaylistInteractorOutputProtocol.swift */; };
+		A01700521FBE589300BB262F /* PlaylistWireframeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01700511FBE589300BB262F /* PlaylistWireframeProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		A017003E1FBCCE3E00BB262F /* Playlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
 		A01700471FBE569C00BB262F /* PlaylistViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistViewProtocol.swift; sourceTree = "<group>"; };
 		A017004B1FBE570100BB262F /* PlaylistPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistPresenterProtocol.swift; sourceTree = "<group>"; };
+		A017004D1FBE57BB00BB262F /* PlaylistInteractorInputProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistInteractorInputProtocol.swift; sourceTree = "<group>"; };
+		A017004F1FBE57C600BB262F /* PlaylistInteractorOutputProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistInteractorOutputProtocol.swift; sourceTree = "<group>"; };
+		A01700511FBE589300BB262F /* PlaylistWireframeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistWireframeProtocol.swift; sourceTree = "<group>"; };
 		D34675AB531599B5B9CA63B6 /* Pods_ViperYouTube.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViperYouTube.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7A0566813978638806A08BC /* Pods-ViperYouTube.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperYouTube.release.xcconfig"; path = "Pods/Target Support Files/Pods-ViperYouTube/Pods-ViperYouTube.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -164,6 +170,8 @@
 		A01700441FBE567100BB262F /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				A017004D1FBE57BB00BB262F /* PlaylistInteractorInputProtocol.swift */,
+				A017004F1FBE57C600BB262F /* PlaylistInteractorOutputProtocol.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -171,6 +179,7 @@
 		A01700451FBE567D00BB262F /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				A01700511FBE589300BB262F /* PlaylistWireframeProtocol.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -308,11 +317,14 @@
 			files = (
 				A01700481FBE569C00BB262F /* PlaylistViewProtocol.swift in Sources */,
 				A01700261FBCC0BF00BB262F /* ViewController.swift in Sources */,
+				A01700501FBE57C600BB262F /* PlaylistInteractorOutputProtocol.swift in Sources */,
 				A01700391FBCC3A300BB262F /* PlaylistDataManager.swift in Sources */,
 				A017003C1FBCC44C00BB262F /* Endpoints.swift in Sources */,
 				A01700241FBCC0BF00BB262F /* AppDelegate.swift in Sources */,
 				A017003F1FBCCE3E00BB262F /* Playlist.swift in Sources */,
 				A017004C1FBE570100BB262F /* PlaylistPresenterProtocol.swift in Sources */,
+				A01700521FBE589300BB262F /* PlaylistWireframeProtocol.swift in Sources */,
+				A017004E1FBE57BB00BB262F /* PlaylistInteractorInputProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
