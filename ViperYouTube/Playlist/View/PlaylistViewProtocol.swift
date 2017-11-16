@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+protocol PlaylistViewProtocol: class {
+    func showPlaylists(_ playlists: [Playlist])
+}
