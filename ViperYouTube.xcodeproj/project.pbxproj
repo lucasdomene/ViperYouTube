@@ -16,6 +16,7 @@
 		A01700391FBCC3A300BB262F /* PlaylistDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01700381FBCC3A300BB262F /* PlaylistDataManager.swift */; };
 		A017003C1FBCC44C00BB262F /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = A017003B1FBCC44C00BB262F /* Endpoints.swift */; };
 		A017003F1FBCCE3E00BB262F /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = A017003E1FBCCE3E00BB262F /* Playlist.swift */; };
+		A01700481FBE569C00BB262F /* PlaylistViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01700471FBE569C00BB262F /* PlaylistViewProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		A01700381FBCC3A300BB262F /* PlaylistDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistDataManager.swift; sourceTree = "<group>"; };
 		A017003B1FBCC44C00BB262F /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
 		A017003E1FBCCE3E00BB262F /* Playlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
+		A01700471FBE569C00BB262F /* PlaylistViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistViewProtocol.swift; sourceTree = "<group>"; };
 		D34675AB531599B5B9CA63B6 /* Pods_ViperYouTube.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViperYouTube.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7A0566813978638806A08BC /* Pods-ViperYouTube.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperYouTube.release.xcconfig"; path = "Pods/Target Support Files/Pods-ViperYouTube/Pods-ViperYouTube.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,6 +103,10 @@
 		A01700351FBCC34A00BB262F /* Playlist */ = {
 			isa = PBXGroup;
 			children = (
+				A01700451FBE567D00BB262F /* Router */,
+				A01700441FBE567100BB262F /* Interactor */,
+				A01700431FBE566A00BB262F /* Presenter */,
+				A01700421FBE565E00BB262F /* View */,
 				A01700371FBCC37A00BB262F /* Data Manager */,
 			);
 			path = Playlist;
@@ -135,6 +141,35 @@
 				A017003E1FBCCE3E00BB262F /* Playlist.swift */,
 			);
 			path = Entities;
+			sourceTree = "<group>";
+		};
+		A01700421FBE565E00BB262F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A01700471FBE569C00BB262F /* PlaylistViewProtocol.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A01700431FBE566A00BB262F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A01700441FBE567100BB262F /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		A01700451FBE567D00BB262F /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +303,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A01700481FBE569C00BB262F /* PlaylistViewProtocol.swift in Sources */,
 				A01700261FBCC0BF00BB262F /* ViewController.swift in Sources */,
 				A01700391FBCC3A300BB262F /* PlaylistDataManager.swift in Sources */,
 				A017003C1FBCC44C00BB262F /* Endpoints.swift in Sources */,

@@ -20,7 +20,7 @@ extension Playlist: Mappable {
     
     mutating func mapping(map: Map) {
         id <- map["id"]
-        title <- map["title"]
-        thumbnail <- map["thumbnails.medium.url"]
+        title <- map["snippet.title"]
+        thumbnail <- map["snippet.thumbnails.medium.url"]
     }
 }
