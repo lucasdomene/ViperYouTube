@@ -46,4 +46,29 @@ enum Endpoints {
         }
     }
     
+    enum PlaylistDetails: Endpoint {
+        case fetch(part: String, playlistID: String)
+        
+        public var path: String {
+            switch self {
+            case .fetch:
+                return "playlistItems"
+            }
+        }
+        
+        public var url: String {
+            switch self {
+            case .fetch:
+                return "\(API.baseURL)\(path)\(parameters)"
+            }
+        }
+        
+        public var parameters: String {
+            switch self {
+            case .fetch(let part, let playlistID):
+                return "?part=\(part)&playlistId=\(channelID)&key=\(API.key)"
+            }
+        }
+    }
+    
 }
