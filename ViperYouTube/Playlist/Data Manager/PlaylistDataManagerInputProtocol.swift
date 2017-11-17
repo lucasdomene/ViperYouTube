@@ -10,5 +10,5 @@ import Foundation
 
 protocol PlaylistDataManagerInputProtocol: class {
     var outputRequestHandler: PlaylistDataManagerOutputProtocol? { get set }
-    func fetchPlaylists()
+    func fetchPlaylists(forChannel channelID: String)
 }

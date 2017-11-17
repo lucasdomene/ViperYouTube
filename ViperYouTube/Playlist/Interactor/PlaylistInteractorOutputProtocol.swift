@@ -10,4 +10,5 @@ import Foundation
 
 protocol PlaylistInteractorOutputProtocol: class {
     func playlistsFetched(playlists: [Playlist])
+    func onError()
 }

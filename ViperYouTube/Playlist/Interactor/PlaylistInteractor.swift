@@ -11,9 +11,20 @@ import Foundation
 class PlaylistInteractor: PlaylistInteractorInputProtocol {
     
     weak var presenter: PlaylistInteractorOutputProtocol?
+    var dataManager: PlaylistDataManagerInputProtocol?
     
     func fetchPlaylists() {
-        PlaylistDataManager().fetchPlaylists(forChannel: "snippet")
+        dataManager?.fetchPlaylists(forChannel: "snippet")
     }
     
+}
+
+extension PlaylistInteractor: PlaylistDataManagerOutputProtocol {
+    func onPlaylistsFetched(playlists: [Playlist]) {
+        presenter?.playlistsFetched(playlists: playlists)
+    }
+    
+    func onError() {
+        presenter?.onError()
+    }
 }

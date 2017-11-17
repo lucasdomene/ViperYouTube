@@ -9,7 +9,9 @@
 import Foundation
 import Alamofire
 
-class PlaylistDataManager {
+class PlaylistDataManager: PlaylistDataManagerInputProtocol {
+    
+    var outputRequestHandler: PlaylistDataManagerOutputProtocol?
     
     func fetchPlaylists(forChannel channelID: String) {
         Alamofire.request(Endpoints.Playlists.fetch(part: "snippet", channelID: channelID).url, method: .get)
@@ -19,16 +21,12 @@ class PlaylistDataManager {
                 case .success(let json):
                     guard let json = json as? [String: Any],
                           let playlists = json["items"] as? [[String: Any]] else {
-                        // TODO: failure
+                        self.outputRequestHandler?.onError()
                         return
                     }
-
-                    let list = playlists.map { return Playlist(JSON: $0) }
-                    print(list)
-                    
-                case .failure(let error):
-                    print(error)
-                    return
+                    self.outputRequestHandler?.onPlaylistsFetched(playlists: playlists.map { return Playlist(JSON: $0)! })
+                case .failure:
+                    self.outputRequestHandler?.onError()
                 }
         }
     }
