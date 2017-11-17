@@ -33,6 +33,7 @@
 		A01F97811FBE84F100050076 /* PlaylistDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01F97801FBE84F100050076 /* PlaylistDetailsPresenter.swift */; };
 		A01F97831FBE87A600050076 /* PlaylistDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01F97821FBE87A600050076 /* PlaylistDetailsViewController.swift */; };
 		A01F97851FBE88EF00050076 /* PlaylistDetailsDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01F97841FBE88EF00050076 /* PlaylistDetailsDataManager.swift */; };
+		A01F97881FBE8A8D00050076 /* PlaylistDetailsWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01F97871FBE8A8D00050076 /* PlaylistDetailsWireFrame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		A01F97801FBE84F100050076 /* PlaylistDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistDetailsPresenter.swift; sourceTree = "<group>"; };
 		A01F97821FBE87A600050076 /* PlaylistDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistDetailsViewController.swift; sourceTree = "<group>"; };
 		A01F97841FBE88EF00050076 /* PlaylistDetailsDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistDetailsDataManager.swift; sourceTree = "<group>"; };
+		A01F97871FBE8A8D00050076 /* PlaylistDetailsWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistDetailsWireFrame.swift; sourceTree = "<group>"; };
 		D34675AB531599B5B9CA63B6 /* Pods_ViperYouTube.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViperYouTube.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7A0566813978638806A08BC /* Pods-ViperYouTube.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperYouTube.release.xcconfig"; path = "Pods/Target Support Files/Pods-ViperYouTube/Pods-ViperYouTube.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -147,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				A01700641FBE7D1800BB262F /* Protocols */,
+				A01F97861FBE8A7100050076 /* Router */,
 				A01700601FBE7CD000BB262F /* Interactor */,
 				A01700611FBE7CD900BB262F /* Presenter */,
 				A01700621FBE7CE000BB262F /* View */,
@@ -258,6 +261,14 @@
 				A01700651FBE7D2D00BB262F /* PlaylistDetailsProtocols.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		A01F97861FBE8A7100050076 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				A01F97871FBE8A8D00050076 /* PlaylistDetailsWireFrame.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -403,6 +414,7 @@
 				A01F97811FBE84F100050076 /* PlaylistDetailsPresenter.swift in Sources */,
 				A017003C1FBCC44C00BB262F /* Endpoints.swift in Sources */,
 				A017006A1FBE81E500BB262F /* PlaylistDetailsInteractor.swift in Sources */,
+				A01F97881FBE8A8D00050076 /* PlaylistDetailsWireFrame.swift in Sources */,
 				A017005E1FBE6A5B00BB262F /* PlaylistWireframe.swift in Sources */,
 				A01700241FBCC0BF00BB262F /* AppDelegate.swift in Sources */,
 				A01F97851FBE88EF00050076 /* PlaylistDetailsDataManager.swift in Sources */,

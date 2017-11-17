@@ -58,7 +58,7 @@ protocol PlaylistDetailsViewProtocol: class {
 // MARK: - Router Protocols
 
 protocol PlaylistDetailsWireFrameProtocol: class {
-    static func createPlaylistDetailsViewController() -> UIViewController
+    static func createPlaylistDetailsViewController(forPlaylist playlist: Playlist) -> UIViewController
     func presentDetailsForVideo(_ video: Video)
 }
 
