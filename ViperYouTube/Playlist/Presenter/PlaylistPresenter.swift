@@ -14,7 +14,7 @@ class PlaylistPresenter: PlaylistPresenterProtocol {
     var router: PlaylistWireframeProtocol?
     
     func viewDidLoad() {
-        // call view delegate
+        view?.showLoading()
         interactor?.fetchPlaylists()
     }
     
@@ -25,10 +25,12 @@ class PlaylistPresenter: PlaylistPresenterProtocol {
 
 extension PlaylistPresenter: PlaylistInteractorOutputProtocol {
     func playlistsFetched(playlists: [Playlist]) {
-        // call view delegate
+        view?.hideLoading()
+        view?.showPlaylists(playlists)
     }
     
     func onError() {
-        // call view delegate
+        view?.hideLoading()
+        view?.showError()
     }
 }

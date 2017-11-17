@@ -18,6 +18,7 @@ class PlaylistViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter?.viewDidLoad()
+        tableView.tableFooterView = UIView()
     }
 
 }
@@ -48,9 +49,9 @@ extension PlaylistViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "PlaylistCell", for: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "PlaylistCell", for: indexPath) as! PlaylistCell
         let playlist = playlists[indexPath.row]
-        // configure cell
+        cell.set(forPlaylist: playlist)
         return cell
     }
     

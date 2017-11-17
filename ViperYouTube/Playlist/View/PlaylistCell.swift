@@ -17,7 +17,7 @@ class PlaylistCell: UITableViewCell {
     func set(forPlaylist playlist: Playlist) {
         titleLabel?.text = playlist.title
         let url = URL(string: playlist.thumbnail)!
-        let placeholderImage = UIImage(named: "placeholder")!
+        let placeholderImage = #imageLiteral(resourceName: "placeholder.png")
         playlistImageView?.af_setImage(withURL: url, placeholderImage: placeholderImage)
     }
 }

@@ -52,7 +52,6 @@
 		A01700591FBE63F100BB262F /* PlaylistPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistPresenter.swift; sourceTree = "<group>"; };
 		A017005B1FBE676B00BB262F /* PlaylistCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistCell.swift; sourceTree = "<group>"; };
 		A017005D1FBE6A5B00BB262F /* PlaylistWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistWireframe.swift; sourceTree = "<group>"; };
-		A017005F1FBE717500BB262F /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
 		D34675AB531599B5B9CA63B6 /* Pods_ViperYouTube.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViperYouTube.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7A0566813978638806A08BC /* Pods-ViperYouTube.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperYouTube.release.xcconfig"; path = "Pods/Target Support Files/Pods-ViperYouTube/Pods-ViperYouTube.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,7 +113,6 @@
 				A01700231FBCC0BF00BB262F /* AppDelegate.swift */,
 				A01700271FBCC0BF00BB262F /* Main.storyboard */,
 				A017002A1FBCC0C000BB262F /* Assets.xcassets */,
-				A017005F1FBE717500BB262F /* placeholder.png */,
 				A017002C1FBCC0C000BB262F /* LaunchScreen.storyboard */,
 				A017002F1FBCC0C000BB262F /* Info.plist */,
 			);
