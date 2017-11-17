@@ -25,6 +25,7 @@
 		A01700561FBE5C2A00BB262F /* PlaylistDataManagerInputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01700551FBE5C2A00BB262F /* PlaylistDataManagerInputProtocol.swift */; };
 		A01700581FBE5C3600BB262F /* PlaylistDataManagerOutputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01700571FBE5C3600BB262F /* PlaylistDataManagerOutputProtocol.swift */; };
 		A017005A1FBE63F100BB262F /* PlaylistPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01700591FBE63F100BB262F /* PlaylistPresenter.swift */; };
+		A017005C1FBE676B00BB262F /* PlaylistCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A017005B1FBE676B00BB262F /* PlaylistCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		A01700551FBE5C2A00BB262F /* PlaylistDataManagerInputProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistDataManagerInputProtocol.swift; sourceTree = "<group>"; };
 		A01700571FBE5C3600BB262F /* PlaylistDataManagerOutputProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistDataManagerOutputProtocol.swift; sourceTree = "<group>"; };
 		A01700591FBE63F100BB262F /* PlaylistPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistPresenter.swift; sourceTree = "<group>"; };
+		A017005B1FBE676B00BB262F /* PlaylistCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistCell.swift; sourceTree = "<group>"; };
 		D34675AB531599B5B9CA63B6 /* Pods_ViperYouTube.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViperYouTube.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7A0566813978638806A08BC /* Pods-ViperYouTube.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperYouTube.release.xcconfig"; path = "Pods/Target Support Files/Pods-ViperYouTube/Pods-ViperYouTube.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -165,6 +167,7 @@
 			children = (
 				A01700251FBCC0BF00BB262F /* PlaylistViewController.swift */,
 				A01700471FBE569C00BB262F /* PlaylistViewProtocol.swift */,
+				A017005B1FBE676B00BB262F /* PlaylistCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -275,12 +278,16 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ViperYouTube/Pods-ViperYouTube-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PKHUD.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -335,6 +342,7 @@
 				A017003C1FBCC44C00BB262F /* Endpoints.swift in Sources */,
 				A01700241FBCC0BF00BB262F /* AppDelegate.swift in Sources */,
 				A017003F1FBCCE3E00BB262F /* Playlist.swift in Sources */,
+				A017005C1FBE676B00BB262F /* PlaylistCell.swift in Sources */,
 				A017005A1FBE63F100BB262F /* PlaylistPresenter.swift in Sources */,
 				A017004C1FBE570100BB262F /* PlaylistPresenterProtocol.swift in Sources */,
 				A01700541FBE5AF000BB262F /* PlaylistInteractor.swift in Sources */,

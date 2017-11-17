@@ -7,7 +7,9 @@ target 'ViperYouTube' do
 
   # Pods for ViperYouTube
 
-  pod 'Alamofire'
+  pod 'Alamofire', '~> 4.5'
   pod 'ObjectMapper', '~> 3.1.0'
+  pod 'AlamofireImage', '~> 3.3.0'
+  pod 'PKHUD'
 
 end
