@@ -10,5 +10,6 @@ import Foundation
 
 protocol PlaylistInteractorInputProtocol: class {
     var presenter: PlaylistInteractorOutputProtocol? { get set }
+    var dataManager: PlaylistDataManagerInputProtocol? { get set }
     func fetchPlaylists()
 }

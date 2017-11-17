@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PKHUD
 
 class PlaylistViewController: UIViewController {
 
@@ -25,6 +26,18 @@ extension PlaylistViewController: PlaylistViewProtocol {
     func showPlaylists(_ playlists: [Playlist]) {
         self.playlists = playlists
         tableView.reloadData()
+    }
+    
+    func showError() {
+        HUD.flash(.label("Ops, an error ocurred!"), delay: 2.0)
+    }
+    
+    func showLoading() {
+        HUD.show(.progress)
+    }
+    
+    func hideLoading() {
+        HUD.hide()
     }
 }
 

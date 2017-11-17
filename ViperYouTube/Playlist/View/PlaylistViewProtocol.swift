@@ -11,4 +11,7 @@ import Foundation
 protocol PlaylistViewProtocol: class {
     var presenter: PlaylistPresenterProtocol? { get set }
     func showPlaylists(_ playlists: [Playlist])
+    func showError()
+    func showLoading()
+    func hideLoading()
 }

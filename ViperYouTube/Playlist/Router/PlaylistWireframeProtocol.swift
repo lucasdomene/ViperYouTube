@@ -6,8 +6,9 @@
 //  Copyright © 2017 Luca Domene Firmo. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 protocol PlaylistWireframeProtocol: class {
+    static func createPlaylistViewController() -> UIViewController
     func presentDetailsForPlaylist(_ playlist: Playlist)
 }
