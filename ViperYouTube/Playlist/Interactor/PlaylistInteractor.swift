@@ -14,7 +14,7 @@ class PlaylistInteractor: PlaylistInteractorInputProtocol {
     var dataManager: PlaylistDataManagerInputProtocol?
     
     func fetchPlaylists() {
-        dataManager?.fetchPlaylists(forChannel: "snippet")
+        dataManager?.fetchPlaylists(forChannel: "UCE_M8A5yxnLfW0KghEeajjw")
     }
     
 }

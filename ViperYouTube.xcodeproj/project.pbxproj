@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		15F1D2724875E9FE29490EF2 /* Pods_ViperYouTube.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D34675AB531599B5B9CA63B6 /* Pods_ViperYouTube.framework */; };
 		A01700241FBCC0BF00BB262F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01700231FBCC0BF00BB262F /* AppDelegate.swift */; };
-		A01700261FBCC0BF00BB262F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01700251FBCC0BF00BB262F /* ViewController.swift */; };
+		A01700261FBCC0BF00BB262F /* PlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01700251FBCC0BF00BB262F /* PlaylistViewController.swift */; };
 		A01700291FBCC0BF00BB262F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A01700271FBCC0BF00BB262F /* Main.storyboard */; };
 		A017002B1FBCC0C000BB262F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A017002A1FBCC0C000BB262F /* Assets.xcassets */; };
 		A017002E1FBCC0C000BB262F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A017002C1FBCC0C000BB262F /* LaunchScreen.storyboard */; };
@@ -31,7 +31,7 @@
 		38234998754BD510C7F284F6 /* Pods-ViperYouTube.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperYouTube.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ViperYouTube/Pods-ViperYouTube.debug.xcconfig"; sourceTree = "<group>"; };
 		A01700201FBCC0BF00BB262F /* ViperYouTube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViperYouTube.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A01700231FBCC0BF00BB262F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A01700251FBCC0BF00BB262F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A01700251FBCC0BF00BB262F /* PlaylistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistViewController.swift; sourceTree = "<group>"; };
 		A01700281FBCC0BF00BB262F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A017002A1FBCC0C000BB262F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A017002D1FBCC0C000BB262F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -107,7 +107,6 @@
 				A01700351FBCC34A00BB262F /* Playlist */,
 				A01700361FBCC35F00BB262F /* Details */,
 				A01700231FBCC0BF00BB262F /* AppDelegate.swift */,
-				A01700251FBCC0BF00BB262F /* ViewController.swift */,
 				A01700271FBCC0BF00BB262F /* Main.storyboard */,
 				A017002A1FBCC0C000BB262F /* Assets.xcassets */,
 				A017002C1FBCC0C000BB262F /* LaunchScreen.storyboard */,
@@ -164,6 +163,7 @@
 		A01700421FBE565E00BB262F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A01700251FBCC0BF00BB262F /* PlaylistViewController.swift */,
 				A01700471FBE569C00BB262F /* PlaylistViewProtocol.swift */,
 			);
 			path = View;
@@ -328,7 +328,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A01700481FBE569C00BB262F /* PlaylistViewProtocol.swift in Sources */,
-				A01700261FBCC0BF00BB262F /* ViewController.swift in Sources */,
+				A01700261FBCC0BF00BB262F /* PlaylistViewController.swift in Sources */,
 				A01700501FBE57C600BB262F /* PlaylistInteractorOutputProtocol.swift in Sources */,
 				A01700581FBE5C3600BB262F /* PlaylistDataManagerOutputProtocol.swift in Sources */,
 				A01700391FBCC3A300BB262F /* PlaylistDataManager.swift in Sources */,
