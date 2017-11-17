@@ -55,5 +55,9 @@ extension PlaylistViewController: UITableViewDataSource, UITableViewDelegate {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        presenter?.showDetailsForPlaylist(playlists[indexPath.row])
+    }
+    
 }
 

@@ -18,7 +18,7 @@ class PlaylistDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter?.viewDidLoad()
-        tableView.tableFooterView = UIView()
+        //tableView.tableFooterView = UIView()
     }
     
 }
@@ -27,7 +27,7 @@ extension PlaylistDetailsViewController: PlaylistDetailsViewProtocol {
     
     func showVideos(_ videos: [Video]) {
         self.videos = videos
-        tableView.reloadData()
+        //tableView.reloadData()
     }
     
     func showError() {
