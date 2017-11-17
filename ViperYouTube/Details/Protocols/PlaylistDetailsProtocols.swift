@@ -12,7 +12,7 @@ import UIKit
 
 protocol PlaylistDetailsDataManagerInputProtocol: class {
     var dataManagerOutput: PlaylistDetailsDataManagerOutputProtocol? { get set }
-    func fetchVideos(forPlaylist: Playlist)
+    func fetchVideos(forPlaylist playlist: Playlist)
 }
 
 protocol PlaylistDetailsDataManagerOutputProtocol: class {
@@ -24,7 +24,8 @@ protocol PlaylistDetailsDataManagerOutputProtocol: class {
 
 protocol PlaylistDetailsInteractorInputProtocol: class {
     var interactorOutput: PlaylistDetailsInteractorOutputProtocol? { get set }
-    func fetchVideos()
+    var dataManager: PlaylistDetailsDataManagerInputProtocol? { get set }
+    func fetchVideos(forPlaylist playlist: Playlist)
 }
 
 protocol PlaylistDetailsInteractorOutputProtocol: class {
