@@ -8,6 +8,8 @@
 
 // MARK: - Data Manager Protocols
 
+import UIKit
+
 protocol PlaylistDetailsDataManagerInputProtocol: class {
     var dataManagerOutput: PlaylistDetailsDataManagerOutputProtocol? { get set }
     func fetchVideos(forPlaylist: Playlist)
@@ -52,3 +54,9 @@ protocol PlaylistDetailsViewProtocol: class {
 }
 
 // MARK: - Router Protocols
+
+protocol PlaylistDetailsWireFrameProtocol: class {
+    static func createPlaylistDetailsViewController() -> UIViewController
+    func presentDetailsForVideo(_ video: Video)
+}
+
