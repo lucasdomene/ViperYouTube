@@ -7,9 +7,11 @@
 //
 
 protocol DetailsDataManagerInputProtocol: class {
-    
+    var dataManagerOutput: DetailsDataManagerOutputProtocol? { get set }
+    func fetchVideos(forPlaylist: Playlist)
 }
 
 protocol DetailsDataManagerOutputProtocol: class {
-    
+    func onVideosFetched(videos: [Video])
+    func onError()
 }
