@@ -19,7 +19,7 @@ class PlaylistPresenter: PlaylistPresenterProtocol {
     }
     
     func showDetailsForPlaylist(_ playlist: Playlist) {
-        router?.presentDetailsForPlaylist(playlist)
+        router?.presentDetailsForPlaylist(fromView: view!, playlist: playlist)
     }
 }
 

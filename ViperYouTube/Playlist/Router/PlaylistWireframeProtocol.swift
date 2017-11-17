@@ -10,5 +10,5 @@ import UIKit
 
 protocol PlaylistWireframeProtocol: class {
     static func createPlaylistViewController() -> UIViewController
-    func presentDetailsForPlaylist(_ playlist: Playlist)
+    func presentDetailsForPlaylist(fromView view: PlaylistViewProtocol, playlist: Playlist) 
 }

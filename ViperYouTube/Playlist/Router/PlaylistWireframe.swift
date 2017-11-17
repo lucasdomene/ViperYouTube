@@ -35,8 +35,12 @@ class PlaylistWireframe: PlaylistWireframeProtocol {
         return UIViewController()
     }
     
-    func presentDetailsForPlaylist(_ playlist: Playlist) {
+    func presentDetailsForPlaylist(fromView view: PlaylistViewProtocol, playlist: Playlist) {
+        let playlistDetailsViewController = PlaylistDetailsWireFrame.createPlaylistDetailsViewController(forPlaylist: playlist)
         
+        if let sourceView = view as? UIViewController {
+            sourceView.navigationController?.pushViewController(playlistDetailsViewController, animated: true)
+        }
     }
     
 }
