@@ -30,6 +30,7 @@
 		A01700661FBE7D2D00BB262F /* PlaylistDetailsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01700651FBE7D2D00BB262F /* PlaylistDetailsProtocols.swift */; };
 		A01700681FBE7DD600BB262F /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01700671FBE7DD600BB262F /* Video.swift */; };
 		A017006A1FBE81E500BB262F /* PlaylistDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01700691FBE81E500BB262F /* PlaylistDetailsInteractor.swift */; };
+		A01F97811FBE84F100050076 /* PlaylistDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01F97801FBE84F100050076 /* PlaylistDetailsPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		A01700651FBE7D2D00BB262F /* PlaylistDetailsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistDetailsProtocols.swift; sourceTree = "<group>"; };
 		A01700671FBE7DD600BB262F /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		A01700691FBE81E500BB262F /* PlaylistDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistDetailsInteractor.swift; sourceTree = "<group>"; };
+		A01F97801FBE84F100050076 /* PlaylistDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistDetailsPresenter.swift; sourceTree = "<group>"; };
 		D34675AB531599B5B9CA63B6 /* Pods_ViperYouTube.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViperYouTube.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7A0566813978638806A08BC /* Pods-ViperYouTube.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperYouTube.release.xcconfig"; path = "Pods/Target Support Files/Pods-ViperYouTube/Pods-ViperYouTube.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -225,6 +227,7 @@
 		A01700611FBE7CD900BB262F /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				A01F97801FBE84F100050076 /* PlaylistDetailsPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -391,6 +394,7 @@
 				A01700501FBE57C600BB262F /* PlaylistInteractorOutputProtocol.swift in Sources */,
 				A01700581FBE5C3600BB262F /* PlaylistDataManagerOutputProtocol.swift in Sources */,
 				A01700391FBCC3A300BB262F /* PlaylistDataManager.swift in Sources */,
+				A01F97811FBE84F100050076 /* PlaylistDetailsPresenter.swift in Sources */,
 				A017003C1FBCC44C00BB262F /* Endpoints.swift in Sources */,
 				A017006A1FBE81E500BB262F /* PlaylistDetailsInteractor.swift in Sources */,
 				A017005E1FBE6A5B00BB262F /* PlaylistWireframe.swift in Sources */,

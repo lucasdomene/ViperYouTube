@@ -36,9 +36,10 @@ protocol PlaylistDetailsInteractorOutputProtocol: class {
 // MARK: - Presenter Protocols
 
 protocol PlaylistDetailsPresenterProtocol: class {
-    //var view
-    var interactor: PlaylistDetailsInteractorOutputProtocol? { get set }
-    // var router
+    var view: PlaylistDetailsViewProtocol? { get set }
+    var interactor: PlaylistDetailsInteractorInputProtocol? { get set }
+    var router: PlaylistDetailsWireFrameProtocol? { get set }
+    var playlist: Playlist? { get set }
     
     func viewDidLoad()
     func showDetailsForVideo(_ video: Video)
