@@ -10,9 +10,9 @@ import Foundation
 
 protocol PlaylistPresenterProtocol: class {
     var view: PlaylistViewProtocol? { get set }
-    var interactor: PlaylistInteractorInputProtocol! { get set }
-    var router: PlaylistWireframeProtocol! { get set }
+    var interactor: PlaylistInteractorInputProtocol? { get set }
+    var router: PlaylistWireframeProtocol? { get set }
     
-    func updateView()
+    func viewDidLoad()
     func showDetailsForPlaylist(_ playlist: Playlist)
 }
