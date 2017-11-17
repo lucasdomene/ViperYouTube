@@ -15,3 +15,13 @@ protocol DetailsDataManagerOutputProtocol: class {
     func onVideosFetched(videos: [Video])
     func onError()
 }
+
+protocol DetailsInteractorInputProtocol: class {
+    var interactorOutput: DetailsInteractorOutputProtocol { get set }
+    func fetchVideos()
+}
+
+protocol DetailsInteractorOutputProtocol: class {
+    func videosFetched(videos: [Video])
+    func onError()
+}

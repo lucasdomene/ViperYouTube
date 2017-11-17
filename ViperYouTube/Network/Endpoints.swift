@@ -66,7 +66,7 @@ enum Endpoints {
         public var parameters: String {
             switch self {
             case .fetch(let part, let playlistID):
-                return "?part=\(part)&playlistId=\(channelID)&key=\(API.key)"
+                return "?part=\(part)&playlistId=\(playlistID)&key=\(API.key)"
             }
         }
     }
