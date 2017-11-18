@@ -11,13 +11,13 @@ import Foundation
 class VideoPresenter: VideoPresenterProtocol {
     
     weak var view: VideoViewProtocol?
-    var wireFrame: VideoWireFrameProtocol?
+    var router: VideoWireFrameProtocol?
     var interactor: VideoInteractorInputProtocol?
     var video: Video?
     
     func viewDidLoad() {
         view?.showLoading()
-        interactor?.fetchVideoDetails(forVideo: video)
+        interactor?.fetchVideoDetails(forVideo: video!)
     }
     
 }

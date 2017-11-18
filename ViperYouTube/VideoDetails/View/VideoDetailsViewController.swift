@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PKHUD
 
 class VideoDetailsViewController: UIViewController {
     
@@ -22,7 +23,19 @@ class VideoDetailsViewController: UIViewController {
 extension VideoDetailsViewController: VideoViewProtocol {
     
     func showVideoDetails(_ video: Video) {
-        
+        // configure view
+    }
+    
+    func showError() {
+         HUD.flash(.label("Ops, an error occurred"), delay: 2.0)
+    }
+    
+    func showLoading() {
+        HUD.show(.progress)
+    }
+    
+    func hideLoading() {
+        HUD.hide()
     }
     
 }
