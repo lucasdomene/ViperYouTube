@@ -11,9 +11,13 @@ import PKHUD
 
 class PlaylistViewController: UIViewController {
 
+    // MARK: - Attributes
+    
     @IBOutlet weak var tableView: UITableView!
     var presenter: PlaylistPresenterProtocol?
     var playlists: [Playlist] = []
+    
+    // MARK: - Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,6 +48,8 @@ extension PlaylistViewController: PlaylistViewProtocol {
 
 extension PlaylistViewController: UITableViewDataSource, UITableViewDelegate {
     
+    // MARK: - Data Source
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return playlists.count
     }
@@ -54,6 +60,8 @@ extension PlaylistViewController: UITableViewDataSource, UITableViewDelegate {
         cell.set(forPlaylist: playlist)
         return cell
     }
+    
+    // MARK: - Delegate
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         presenter?.showDetailsForPlaylist(playlists[indexPath.row])

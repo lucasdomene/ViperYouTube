@@ -10,10 +10,14 @@ import Foundation
 
 class VideoPresenter: VideoPresenterProtocol {
     
+    // MARK: - Attributes
+    
     weak var view: VideoViewProtocol?
     var router: VideoWireFrameProtocol?
     var interactor: VideoInteractorInputProtocol?
     var video: Video?
+    
+    // MARK: - Life Cycle
     
     func viewDidLoad() {
         view?.showLoading()

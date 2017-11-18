@@ -10,15 +10,21 @@ import Foundation
 
 class PlaylistDetailsPresenter: PlaylistDetailsPresenterProtocol {
     
+    // MARK: - Attributes
+    
     var view: PlaylistDetailsViewProtocol?
     var interactor: PlaylistDetailsInteractorInputProtocol?
     var router: PlaylistDetailsWireFrameProtocol?
     var playlist: Playlist?
     
+    // MARK: - Life Cycle
+    
     func viewDidLoad() {
         view?.showLoading()
         interactor?.fetchVideos(forPlaylist: playlist!)
     }
+    
+    // MARK: - Transition
     
     func showDetailsForVideo(_ video: Video) {
         router?.presentDetailsForVideo(fromView: view!, video: video)

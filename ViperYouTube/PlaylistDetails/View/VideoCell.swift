@@ -11,8 +11,12 @@ import AlamofireImage
 
 class VideoCell: UITableViewCell {
     
+    // MARK: - Attributes
+    
     @IBOutlet weak var videoImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
+    
+    // MARK: - Configuration
     
     func set(forVideo video: Video) {
         titleLabel?.text = video.title

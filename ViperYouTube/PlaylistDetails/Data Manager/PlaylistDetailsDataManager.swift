@@ -11,7 +11,11 @@ import Alamofire
 
 class PlaylistDetailsDataManager: PlaylistDetailsDataManagerInputProtocol {
     
+    // MARK: - Attributes
+    
     var dataManagerOutput: PlaylistDetailsDataManagerOutputProtocol?
+    
+    // MARK: - Fetching
     
     func fetchVideos(forPlaylist playlist: Playlist) {
         Alamofire.request(Endpoints.PlaylistDetails.fetch(part: "snippet", playlistID: playlist.id).url, method: .get).validate().responseJSON { response in

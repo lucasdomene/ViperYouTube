@@ -8,8 +8,12 @@
 
 class VideoInteractor: VideoInteractorInputProtocol {
     
+    // MARK: - Attributes
+    
     var interactorOutput: VideoInteractorOutputProtocol?
     var dataManager: VideoDataManagerInputProtocol?
+    
+    // MARK: - Fetching
     
     func fetchVideoDetails(forVideo video: Video) {
         dataManager?.fetchVideoDetails(forVideo: video)

@@ -11,8 +11,12 @@ import AlamofireImage
 
 class PlaylistCell: UITableViewCell {
     
+    // MARK: - Outlets
+    
     @IBOutlet weak var playlistImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
+    
+    // MARK: - Configuration
     
     func set(forPlaylist playlist: Playlist) {
         titleLabel?.text = playlist.title

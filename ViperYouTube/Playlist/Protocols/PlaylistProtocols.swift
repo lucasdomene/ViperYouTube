@@ -8,6 +8,8 @@
 
 import UIKit
 
+// MARK: - Data Manager protocols
+
 protocol PlaylistDataManagerInputProtocol: class {
     var outputRequestHandler: PlaylistDataManagerOutputProtocol? { get set }
     func fetchPlaylists(forChannel channelID: String)
@@ -17,6 +19,8 @@ protocol PlaylistDataManagerOutputProtocol: class {
     func onPlaylistsFetched(playlists: [Playlist])
     func onError()
 }
+
+// MARK: - Interactor protocols
 
 protocol PlaylistInteractorInputProtocol: class {
     var presenter: PlaylistInteractorOutputProtocol? { get set }
@@ -29,6 +33,8 @@ protocol PlaylistInteractorOutputProtocol: class {
     func onError()
 }
 
+// MARK: - presenter protocols
+
 protocol PlaylistPresenterProtocol: class {
     var view: PlaylistViewProtocol? { get set }
     var interactor: PlaylistInteractorInputProtocol? { get set }
@@ -38,6 +44,8 @@ protocol PlaylistPresenterProtocol: class {
     func showDetailsForPlaylist(_ playlist: Playlist)
 }
 
+// MARK: - View protocols
+
 protocol PlaylistViewProtocol: class {
     var presenter: PlaylistPresenterProtocol? { get set }
     func showPlaylists(_ playlists: [Playlist])
@@ -45,6 +53,8 @@ protocol PlaylistViewProtocol: class {
     func showLoading()
     func hideLoading()
 }
+
+// MARK: - Router protocols
 
 protocol PlaylistWireframeProtocol: class {
     static func createPlaylistViewController() -> UIViewController

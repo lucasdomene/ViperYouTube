@@ -10,8 +10,12 @@ import Foundation
 
 class PlaylistInteractor: PlaylistInteractorInputProtocol {
     
+    // MARK: - Attributes
+    
     weak var presenter: PlaylistInteractorOutputProtocol?
     var dataManager: PlaylistDataManagerInputProtocol?
+    
+    // MARK: - Fetching
     
     func fetchPlaylists() {
         dataManager?.fetchPlaylists(forChannel: "UCE_M8A5yxnLfW0KghEeajjw")

@@ -10,8 +10,12 @@ import Foundation
 
 class PlaylistDetailsInteractor: PlaylistDetailsInteractorInputProtocol {
     
+    // MARK: - Attributes
+    
     var interactorOutput: PlaylistDetailsInteractorOutputProtocol?
     var dataManager: PlaylistDetailsDataManagerInputProtocol?
+    
+    // MARK: - Fetching
     
     func fetchVideos(forPlaylist playlist: Playlist) {
         dataManager?.fetchVideos(forPlaylist: playlist)

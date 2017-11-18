@@ -11,10 +11,14 @@ import PKHUD
 
 class VideoDetailsViewController: UIViewController {
     
+    // MARK: - Attributes
+    
     @IBOutlet weak var videoImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     
     var presenter: VideoPresenterProtocol?
+    
+    // MARK: - Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()

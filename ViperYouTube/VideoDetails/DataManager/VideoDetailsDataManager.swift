@@ -10,7 +10,11 @@ import Alamofire
 
 class VideoDetailsDataManager: VideoDataManagerInputProtocol {
     
+    // MARK: - Attributes
+    
     var dataManagerOutPut: VideoDataManagerOutputProtocol?
+    
+    // MARK: - Fetching
     
     func fetchVideoDetails(forVideo video: Video) {
         Alamofire.request(Endpoints.VideoDetails.fetch(part: "snippet", videoID: video.id).url, method: .get).validate().responseJSON { response in
