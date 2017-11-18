@@ -91,9 +91,54 @@
                     <view key="view" contentMode="scaleToFill" id="Dw3-v6-gKr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="160" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hnY-E1-9kr">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="VideoCell" rowHeight="160" id="Vw8-UX-6Cf">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="160"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Vw8-UX-6Cf" id="Viw-Il-rdP">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="159.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="58s-vH-oKw">
+                                                    <rect key="frame" x="8" y="8" width="359" height="102"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Frc-mw-tdb">
+                                                    <rect key="frame" x="28" y="120.5" width="319" height="21"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Frc-mw-tdb" firstAttribute="top" secondItem="58s-vH-oKw" secondAttribute="bottom" constant="10.5" id="PAf-tb-8e0"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Frc-mw-tdb" secondAttribute="trailing" constant="20" id="Q9R-cf-7Xy"/>
+                                                <constraint firstItem="58s-vH-oKw" firstAttribute="leading" secondItem="Viw-Il-rdP" secondAttribute="leadingMargin" id="Yt1-qS-9G8"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Frc-mw-tdb" secondAttribute="bottom" constant="10" id="g0u-24-yfi"/>
+                                                <constraint firstItem="Frc-mw-tdb" firstAttribute="leading" secondItem="Viw-Il-rdP" secondAttribute="leadingMargin" constant="20" id="gDm-WM-zLZ"/>
+                                                <constraint firstItem="58s-vH-oKw" firstAttribute="trailing" secondItem="Viw-Il-rdP" secondAttribute="trailingMargin" id="jIB-29-ZaX"/>
+                                                <constraint firstItem="58s-vH-oKw" firstAttribute="top" secondItem="Viw-Il-rdP" secondAttribute="topMargin" id="ot1-qM-2sQ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hnY-E1-9kr" firstAttribute="top" secondItem="Rga-30-GSe" secondAttribute="top" id="Afl-pT-FSj"/>
+                            <constraint firstItem="Rga-30-GSe" firstAttribute="bottom" secondItem="hnY-E1-9kr" secondAttribute="bottom" id="EdD-Gb-EDU"/>
+                            <constraint firstItem="Rga-30-GSe" firstAttribute="trailing" secondItem="hnY-E1-9kr" secondAttribute="trailing" id="P97-md-z3W"/>
+                            <constraint firstItem="hnY-E1-9kr" firstAttribute="leading" secondItem="Rga-30-GSe" secondAttribute="leading" id="VFY-u3-1xb"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Rga-30-GSe"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="hnY-E1-9kr" id="1an-Tf-jh4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j3y-8e-ZoE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

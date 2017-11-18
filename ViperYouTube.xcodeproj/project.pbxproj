@@ -34,6 +34,7 @@
 		A01F97831FBE87A600050076 /* PlaylistDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01F97821FBE87A600050076 /* PlaylistDetailsViewController.swift */; };
 		A01F97851FBE88EF00050076 /* PlaylistDetailsDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01F97841FBE88EF00050076 /* PlaylistDetailsDataManager.swift */; };
 		A01F97881FBE8A8D00050076 /* PlaylistDetailsWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01F97871FBE8A8D00050076 /* PlaylistDetailsWireFrame.swift */; };
+		A05A82C61FBFBDB30093702A /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05A82C51FBFBDB30093702A /* VideoCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		A01F97821FBE87A600050076 /* PlaylistDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistDetailsViewController.swift; sourceTree = "<group>"; };
 		A01F97841FBE88EF00050076 /* PlaylistDetailsDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistDetailsDataManager.swift; sourceTree = "<group>"; };
 		A01F97871FBE8A8D00050076 /* PlaylistDetailsWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistDetailsWireFrame.swift; sourceTree = "<group>"; };
+		A05A82C51FBFBDB30093702A /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
 		D34675AB531599B5B9CA63B6 /* Pods_ViperYouTube.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViperYouTube.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7A0566813978638806A08BC /* Pods-ViperYouTube.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperYouTube.release.xcconfig"; path = "Pods/Target Support Files/Pods-ViperYouTube/Pods-ViperYouTube.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -243,6 +245,7 @@
 			isa = PBXGroup;
 			children = (
 				A01F97821FBE87A600050076 /* PlaylistDetailsViewController.swift */,
+				A05A82C51FBFBDB30093702A /* VideoCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -423,6 +426,7 @@
 				A017003F1FBCCE3E00BB262F /* Playlist.swift in Sources */,
 				A017005C1FBE676B00BB262F /* PlaylistCell.swift in Sources */,
 				A017005A1FBE63F100BB262F /* PlaylistPresenter.swift in Sources */,
+				A05A82C61FBFBDB30093702A /* VideoCell.swift in Sources */,
 				A017004C1FBE570100BB262F /* PlaylistPresenterProtocol.swift in Sources */,
 				A01700681FBE7DD600BB262F /* Video.swift in Sources */,
 				A01700541FBE5AF000BB262F /* PlaylistInteractor.swift in Sources */,
