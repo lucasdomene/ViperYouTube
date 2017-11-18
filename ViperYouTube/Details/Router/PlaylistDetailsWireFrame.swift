@@ -28,6 +28,8 @@ class PlaylistDetailsWireFrame: PlaylistDetailsWireFrameProtocol {
             presenter.playlist = playlist
             presenter.router = wireFrame
             interactor.dataManager = dataManager
+            interactor.interactorOutput = presenter
+            dataManager.dataManagerOutput = interactor
             
             return viewController
         }

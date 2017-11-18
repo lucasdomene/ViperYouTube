@@ -96,7 +96,7 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="VideoCell" rowHeight="160" id="Vw8-UX-6Cf">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="VideoCell" rowHeight="160" id="Vw8-UX-6Cf" customClass="VideoCell" customModule="ViperYouTube" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="160"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Vw8-UX-6Cf" id="Viw-Il-rdP">
@@ -123,8 +123,16 @@
                                                 <constraint firstItem="58s-vH-oKw" firstAttribute="top" secondItem="Viw-Il-rdP" secondAttribute="topMargin" id="ot1-qM-2sQ"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="titleLabel" destination="Frc-mw-tdb" id="8wO-Xb-Gqp"/>
+                                            <outlet property="videoImageView" destination="58s-vH-oKw" id="McJ-da-nVE"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="wqH-wo-5YX" id="Mxw-2N-Wma"/>
+                                    <outlet property="delegate" destination="wqH-wo-5YX" id="PGt-DT-2K2"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
