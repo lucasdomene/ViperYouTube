@@ -31,6 +31,7 @@
 		A05A82C91FBFC6D20093702A /* PlaylistProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05A82C81FBFC6D20093702A /* PlaylistProtocols.swift */; };
 		A05A82D01FBFC7FF0093702A /* VideoProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05A82CF1FBFC7FF0093702A /* VideoProtocols.swift */; };
 		A05A82D21FBFC8F60093702A /* VideoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05A82D11FBFC8F60093702A /* VideoPresenter.swift */; };
+		A05A82D41FBFC9490093702A /* VideoDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05A82D31FBFC9490093702A /* VideoDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		A05A82C81FBFC6D20093702A /* PlaylistProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistProtocols.swift; sourceTree = "<group>"; };
 		A05A82CF1FBFC7FF0093702A /* VideoProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoProtocols.swift; sourceTree = "<group>"; };
 		A05A82D11FBFC8F60093702A /* VideoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPresenter.swift; sourceTree = "<group>"; };
+		A05A82D31FBFC9490093702A /* VideoDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetailsViewController.swift; sourceTree = "<group>"; };
 		D34675AB531599B5B9CA63B6 /* Pods_ViperYouTube.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViperYouTube.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7A0566813978638806A08BC /* Pods-ViperYouTube.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperYouTube.release.xcconfig"; path = "Pods/Target Support Files/Pods-ViperYouTube/Pods-ViperYouTube.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -299,6 +301,7 @@
 		A05A82CD1FBFC7DB0093702A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A05A82D31FBFC9490093702A /* VideoDetailsViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -445,6 +448,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A05A82D41FBFC9490093702A /* VideoDetailsViewController.swift in Sources */,
 				A01700261FBCC0BF00BB262F /* PlaylistViewController.swift in Sources */,
 				A01700391FBCC3A300BB262F /* PlaylistDataManager.swift in Sources */,
 				A01F97811FBE84F100050076 /* PlaylistDetailsPresenter.swift in Sources */,
