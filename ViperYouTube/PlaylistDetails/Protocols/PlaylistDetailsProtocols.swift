@@ -59,6 +59,6 @@ protocol PlaylistDetailsViewProtocol: class {
 
 protocol PlaylistDetailsWireFrameProtocol: class {
     static func createPlaylistDetailsViewController(forPlaylist playlist: Playlist) -> UIViewController
-    func presentDetailsForVideo(_ video: Video)
+    func presentDetailsForVideo(fromView view: PlaylistDetailsViewProtocol, video: Video)
 }
 

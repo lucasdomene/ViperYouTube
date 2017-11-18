@@ -58,4 +58,8 @@ extension PlaylistDetailsViewController: UITableViewDataSource, UITableViewDeleg
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        presenter?.showDetailsForVideo(videos[indexPath.row])
+    }
+    
 }

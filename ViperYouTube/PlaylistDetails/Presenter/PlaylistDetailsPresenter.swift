@@ -21,7 +21,7 @@ class PlaylistDetailsPresenter: PlaylistDetailsPresenterProtocol {
     }
     
     func showDetailsForVideo(_ video: Video) {
-        router?.presentDetailsForVideo(video)
+        router?.presentDetailsForVideo(fromView: view!, video: video)
     }
     
 }

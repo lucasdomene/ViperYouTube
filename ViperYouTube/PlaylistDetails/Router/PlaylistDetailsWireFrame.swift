@@ -36,8 +36,12 @@ class PlaylistDetailsWireFrame: PlaylistDetailsWireFrameProtocol {
         return UIViewController()
     }
     
-    func presentDetailsForVideo(_ video: Video) {
+    func presentDetailsForVideo(fromView view: PlaylistDetailsViewProtocol, video: Video) {
+        let videoDetailsViewController = VideoDetailsWireFrame.createVideoDetailsViewController(forVideo: video)
         
+        if let sourceView = view as? UIViewController {
+            sourceView.navigationController?.pushViewController(videoDetailsViewController, animated: true)
+        }
     }
     
 }
