@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		15F1D2724875E9FE29490EF2 /* Pods_ViperYouTube.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D34675AB531599B5B9CA63B6 /* Pods_ViperYouTube.framework */; };
+		A004878C1FBFDA7300EB5FE6 /* PlaylistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A004878B1FBFDA7300EB5FE6 /* PlaylistTests.swift */; };
+		A004878E1FBFE14000EB5FE6 /* VideoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A004878D1FBFE14000EB5FE6 /* VideoTests.swift */; };
+		A00487921FBFE2B200EB5FE6 /* FakePlaylistDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00487911FBFE2B200EB5FE6 /* FakePlaylistDataManager.swift */; };
+		A00487941FBFE41200EB5FE6 /* FakePlaylistOutputDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00487931FBFE41200EB5FE6 /* FakePlaylistOutputDataManager.swift */; };
+		A00487981FBFE4F200EB5FE6 /* PlaylistInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00487971FBFE4F200EB5FE6 /* PlaylistInteractorTests.swift */; };
 		A01700241FBCC0BF00BB262F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01700231FBCC0BF00BB262F /* AppDelegate.swift */; };
 		A01700261FBCC0BF00BB262F /* PlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01700251FBCC0BF00BB262F /* PlaylistViewController.swift */; };
 		A01700291FBCC0BF00BB262F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A01700271FBCC0BF00BB262F /* Main.storyboard */; };
@@ -37,8 +42,25 @@
 		A05A82DC1FBFD0B50093702A /* VideoDetailsWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05A82DB1FBFD0B50093702A /* VideoDetailsWireFrame.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A00487861FBFDA3C00EB5FE6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A01700181FBCC0BF00BB262F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A017001F1FBCC0BF00BB262F;
+			remoteInfo = ViperYouTube;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		38234998754BD510C7F284F6 /* Pods-ViperYouTube.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperYouTube.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ViperYouTube/Pods-ViperYouTube.debug.xcconfig"; sourceTree = "<group>"; };
+		A00487811FBFDA3C00EB5FE6 /* ViperYouTubeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViperYouTubeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A00487851FBFDA3C00EB5FE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A004878B1FBFDA7300EB5FE6 /* PlaylistTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistTests.swift; sourceTree = "<group>"; };
+		A004878D1FBFE14000EB5FE6 /* VideoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTests.swift; sourceTree = "<group>"; };
+		A00487911FBFE2B200EB5FE6 /* FakePlaylistDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakePlaylistDataManager.swift; sourceTree = "<group>"; };
+		A00487931FBFE41200EB5FE6 /* FakePlaylistOutputDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakePlaylistOutputDataManager.swift; sourceTree = "<group>"; };
+		A00487971FBFE4F200EB5FE6 /* PlaylistInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistInteractorTests.swift; sourceTree = "<group>"; };
 		A01700201FBCC0BF00BB262F /* ViperYouTube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViperYouTube.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A01700231FBCC0BF00BB262F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A01700251FBCC0BF00BB262F /* PlaylistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +95,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A004877E1FBFDA3C00EB5FE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A017001D1FBCC0BF00BB262F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -101,10 +130,40 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A00487821FBFDA3C00EB5FE6 /* ViperYouTubeTests */ = {
+			isa = PBXGroup;
+			children = (
+				A00487901FBFE28900EB5FE6 /* PlaylistInteractorTests */,
+				A004878F1FBFE27700EB5FE6 /* EntitiesTests */,
+				A00487851FBFDA3C00EB5FE6 /* Info.plist */,
+			);
+			path = ViperYouTubeTests;
+			sourceTree = "<group>";
+		};
+		A004878F1FBFE27700EB5FE6 /* EntitiesTests */ = {
+			isa = PBXGroup;
+			children = (
+				A004878B1FBFDA7300EB5FE6 /* PlaylistTests.swift */,
+				A004878D1FBFE14000EB5FE6 /* VideoTests.swift */,
+			);
+			path = EntitiesTests;
+			sourceTree = "<group>";
+		};
+		A00487901FBFE28900EB5FE6 /* PlaylistInteractorTests */ = {
+			isa = PBXGroup;
+			children = (
+				A00487911FBFE2B200EB5FE6 /* FakePlaylistDataManager.swift */,
+				A00487931FBFE41200EB5FE6 /* FakePlaylistOutputDataManager.swift */,
+				A00487971FBFE4F200EB5FE6 /* PlaylistInteractorTests.swift */,
+			);
+			path = PlaylistInteractorTests;
+			sourceTree = "<group>";
+		};
 		A01700171FBCC0BF00BB262F = {
 			isa = PBXGroup;
 			children = (
 				A01700221FBCC0BF00BB262F /* ViperYouTube */,
+				A00487821FBFDA3C00EB5FE6 /* ViperYouTubeTests */,
 				A01700211FBCC0BF00BB262F /* Products */,
 				4DEFB1A4B5214C6DDFA44D1A /* Pods */,
 				519699213B612E5EA11B981D /* Frameworks */,
@@ -115,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				A01700201FBCC0BF00BB262F /* ViperYouTube.app */,
+				A00487811FBFDA3C00EB5FE6 /* ViperYouTubeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -341,6 +401,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A00487801FBFDA3C00EB5FE6 /* ViperYouTubeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A00487881FBFDA3C00EB5FE6 /* Build configuration list for PBXNativeTarget "ViperYouTubeTests" */;
+			buildPhases = (
+				A004877D1FBFDA3C00EB5FE6 /* Sources */,
+				A004877E1FBFDA3C00EB5FE6 /* Frameworks */,
+				A004877F1FBFDA3C00EB5FE6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A00487871FBFDA3C00EB5FE6 /* PBXTargetDependency */,
+			);
+			name = ViperYouTubeTests;
+			productName = ViperYouTubeTests;
+			productReference = A00487811FBFDA3C00EB5FE6 /* ViperYouTubeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		A017001F1FBCC0BF00BB262F /* ViperYouTube */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A01700321FBCC0C000BB262F /* Build configuration list for PBXNativeTarget "ViperYouTube" */;
@@ -371,6 +449,12 @@
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Luca Domene Firmo";
 				TargetAttributes = {
+					A00487801FBFDA3C00EB5FE6 = {
+						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A017001F1FBCC0BF00BB262F;
+					};
 					A017001F1FBCC0BF00BB262F = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
@@ -391,11 +475,19 @@
 			projectRoot = "";
 			targets = (
 				A017001F1FBCC0BF00BB262F /* ViperYouTube */,
+				A00487801FBFDA3C00EB5FE6 /* ViperYouTubeTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A004877F1FBFDA3C00EB5FE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A017001E1FBCC0BF00BB262F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -469,6 +561,18 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A004877D1FBFDA3C00EB5FE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A004878C1FBFDA7300EB5FE6 /* PlaylistTests.swift in Sources */,
+				A00487941FBFE41200EB5FE6 /* FakePlaylistOutputDataManager.swift in Sources */,
+				A00487981FBFE4F200EB5FE6 /* PlaylistInteractorTests.swift in Sources */,
+				A00487921FBFE2B200EB5FE6 /* FakePlaylistDataManager.swift in Sources */,
+				A004878E1FBFE14000EB5FE6 /* VideoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A017001C1FBCC0BF00BB262F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -502,6 +606,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		A00487871FBFDA3C00EB5FE6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A017001F1FBCC0BF00BB262F /* ViperYouTube */;
+			targetProxy = A00487861FBFDA3C00EB5FE6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		A01700271FBCC0BF00BB262F /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -522,6 +634,41 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		A00487891FBFDA3C00EB5FE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8VWQC7JGT6;
+				INFOPLIST_FILE = ViperYouTubeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.domene.ViperYouTubeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ViperYouTube.app/ViperYouTube";
+			};
+			name = Debug;
+		};
+		A004878A1FBFDA3C00EB5FE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8VWQC7JGT6;
+				INFOPLIST_FILE = ViperYouTubeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.domene.ViperYouTubeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ViperYouTube.app/ViperYouTube";
+			};
+			name = Release;
+		};
 		A01700301FBCC0C000BB262F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -664,6 +811,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A00487881FBFDA3C00EB5FE6 /* Build configuration list for PBXNativeTarget "ViperYouTubeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A00487891FBFDA3C00EB5FE6 /* Debug */,
+				A004878A1FBFDA3C00EB5FE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A017001B1FBCC0BF00BB262F /* Build configuration list for PBXProject "ViperYouTube" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
