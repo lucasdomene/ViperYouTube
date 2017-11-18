@@ -29,6 +29,7 @@
 		A01F97881FBE8A8D00050076 /* PlaylistDetailsWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01F97871FBE8A8D00050076 /* PlaylistDetailsWireFrame.swift */; };
 		A05A82C61FBFBDB30093702A /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05A82C51FBFBDB30093702A /* VideoCell.swift */; };
 		A05A82C91FBFC6D20093702A /* PlaylistProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05A82C81FBFC6D20093702A /* PlaylistProtocols.swift */; };
+		A05A82D01FBFC7FF0093702A /* VideoProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05A82CF1FBFC7FF0093702A /* VideoProtocols.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		A01F97871FBE8A8D00050076 /* PlaylistDetailsWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistDetailsWireFrame.swift; sourceTree = "<group>"; };
 		A05A82C51FBFBDB30093702A /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
 		A05A82C81FBFC6D20093702A /* PlaylistProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistProtocols.swift; sourceTree = "<group>"; };
+		A05A82CF1FBFC7FF0093702A /* VideoProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoProtocols.swift; sourceTree = "<group>"; };
 		D34675AB531599B5B9CA63B6 /* Pods_ViperYouTube.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViperYouTube.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7A0566813978638806A08BC /* Pods-ViperYouTube.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperYouTube.release.xcconfig"; path = "Pods/Target Support Files/Pods-ViperYouTube/Pods-ViperYouTube.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,7 +115,8 @@
 				A017003D1FBCCE2F00BB262F /* Entities */,
 				A017003A1FBCC43900BB262F /* Network */,
 				A01700351FBCC34A00BB262F /* Playlist */,
-				A01700361FBCC35F00BB262F /* Details */,
+				A01700361FBCC35F00BB262F /* PlaylistDetails */,
+				A05A82CA1FBFC7980093702A /* VideoDetails */,
 				A01700231FBCC0BF00BB262F /* AppDelegate.swift */,
 				A01700271FBCC0BF00BB262F /* Main.storyboard */,
 				A017002A1FBCC0C000BB262F /* Assets.xcassets */,
@@ -136,7 +139,7 @@
 			path = Playlist;
 			sourceTree = "<group>";
 		};
-		A01700361FBCC35F00BB262F /* Details */ = {
+		A01700361FBCC35F00BB262F /* PlaylistDetails */ = {
 			isa = PBXGroup;
 			children = (
 				A01700641FBE7D1800BB262F /* Protocols */,
@@ -146,7 +149,7 @@
 				A01700621FBE7CE000BB262F /* View */,
 				A01700631FBE7CE600BB262F /* Data Manager */,
 			);
-			path = Details;
+			path = PlaylistDetails;
 			sourceTree = "<group>";
 		};
 		A01700371FBCC37A00BB262F /* Data Manager */ = {
@@ -262,6 +265,46 @@
 				A05A82C81FBFC6D20093702A /* PlaylistProtocols.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		A05A82CA1FBFC7980093702A /* VideoDetails */ = {
+			isa = PBXGroup;
+			children = (
+				A05A82CB1FBFC7CA0093702A /* Protocols */,
+				A05A82CC1FBFC7D50093702A /* Presenter */,
+				A05A82CD1FBFC7DB0093702A /* View */,
+				A05A82CE1FBFC7ED0093702A /* Wireframe */,
+			);
+			path = VideoDetails;
+			sourceTree = "<group>";
+		};
+		A05A82CB1FBFC7CA0093702A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				A05A82CF1FBFC7FF0093702A /* VideoProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		A05A82CC1FBFC7D50093702A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A05A82CD1FBFC7DB0093702A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A05A82CE1FBFC7ED0093702A /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Wireframe;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -411,6 +454,7 @@
 				A01700661FBE7D2D00BB262F /* PlaylistDetailsProtocols.swift in Sources */,
 				A01F97831FBE87A600050076 /* PlaylistDetailsViewController.swift in Sources */,
 				A017003F1FBCCE3E00BB262F /* Playlist.swift in Sources */,
+				A05A82D01FBFC7FF0093702A /* VideoProtocols.swift in Sources */,
 				A017005C1FBE676B00BB262F /* PlaylistCell.swift in Sources */,
 				A017005A1FBE63F100BB262F /* PlaylistPresenter.swift in Sources */,
 				A05A82C61FBFBDB30093702A /* VideoCell.swift in Sources */,
