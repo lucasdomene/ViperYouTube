@@ -71,4 +71,29 @@ enum Endpoints {
         }
     }
     
+    enum VideoDetails: Endpoint {
+        case fetch(part: String, videoID: String)
+        
+        public var path: String {
+            switch self {
+            case .fetch:
+                return "videos"
+            }
+        }
+        
+        public var url: String {
+            switch self {
+            case .fetch:
+                return "\(API.baseURL)\(path)\(parameters)"
+            }
+        }
+        
+        public var parameters: String {
+            switch self {
+            case .fetch(let part, let videoID):
+                return "?part=\(part)&id=\(videoID)&key=\(API.key)"
+            }
+        }
+    }
+    
 }
