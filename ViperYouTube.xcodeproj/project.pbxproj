@@ -13,6 +13,10 @@
 		A00487921FBFE2B200EB5FE6 /* FakePlaylistDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00487911FBFE2B200EB5FE6 /* FakePlaylistDataManager.swift */; };
 		A00487941FBFE41200EB5FE6 /* FakePlaylistOutputDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00487931FBFE41200EB5FE6 /* FakePlaylistOutputDataManager.swift */; };
 		A00487981FBFE4F200EB5FE6 /* PlaylistInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00487971FBFE4F200EB5FE6 /* PlaylistInteractorTests.swift */; };
+		A004879B1FBFE7D200EB5FE6 /* FakePlaylistInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A004879A1FBFE7D200EB5FE6 /* FakePlaylistInteractor.swift */; };
+		A004879D1FBFE7E400EB5FE6 /* FakePlaylistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A004879C1FBFE7E400EB5FE6 /* FakePlaylistView.swift */; };
+		A004879F1FBFE80D00EB5FE6 /* PlaylistPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A004879E1FBFE80D00EB5FE6 /* PlaylistPresenterTests.swift */; };
+		A00487A11FBFEAFA00EB5FE6 /* FakePlaylistPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00487A01FBFEAFA00EB5FE6 /* FakePlaylistPresenter.swift */; };
 		A01700241FBCC0BF00BB262F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01700231FBCC0BF00BB262F /* AppDelegate.swift */; };
 		A01700261FBCC0BF00BB262F /* PlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01700251FBCC0BF00BB262F /* PlaylistViewController.swift */; };
 		A01700291FBCC0BF00BB262F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A01700271FBCC0BF00BB262F /* Main.storyboard */; };
@@ -61,6 +65,10 @@
 		A00487911FBFE2B200EB5FE6 /* FakePlaylistDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakePlaylistDataManager.swift; sourceTree = "<group>"; };
 		A00487931FBFE41200EB5FE6 /* FakePlaylistOutputDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakePlaylistOutputDataManager.swift; sourceTree = "<group>"; };
 		A00487971FBFE4F200EB5FE6 /* PlaylistInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistInteractorTests.swift; sourceTree = "<group>"; };
+		A004879A1FBFE7D200EB5FE6 /* FakePlaylistInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakePlaylistInteractor.swift; sourceTree = "<group>"; };
+		A004879C1FBFE7E400EB5FE6 /* FakePlaylistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakePlaylistView.swift; sourceTree = "<group>"; };
+		A004879E1FBFE80D00EB5FE6 /* PlaylistPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistPresenterTests.swift; sourceTree = "<group>"; };
+		A00487A01FBFEAFA00EB5FE6 /* FakePlaylistPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakePlaylistPresenter.swift; sourceTree = "<group>"; };
 		A01700201FBCC0BF00BB262F /* ViperYouTube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViperYouTube.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A01700231FBCC0BF00BB262F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A01700251FBCC0BF00BB262F /* PlaylistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistViewController.swift; sourceTree = "<group>"; };
@@ -133,6 +141,7 @@
 		A00487821FBFDA3C00EB5FE6 /* ViperYouTubeTests */ = {
 			isa = PBXGroup;
 			children = (
+				A00487991FBFE79000EB5FE6 /* PlaylistPresenterTests */,
 				A00487901FBFE28900EB5FE6 /* PlaylistInteractorTests */,
 				A004878F1FBFE27700EB5FE6 /* EntitiesTests */,
 				A00487851FBFDA3C00EB5FE6 /* Info.plist */,
@@ -157,6 +166,17 @@
 				A00487971FBFE4F200EB5FE6 /* PlaylistInteractorTests.swift */,
 			);
 			path = PlaylistInteractorTests;
+			sourceTree = "<group>";
+		};
+		A00487991FBFE79000EB5FE6 /* PlaylistPresenterTests */ = {
+			isa = PBXGroup;
+			children = (
+				A004879A1FBFE7D200EB5FE6 /* FakePlaylistInteractor.swift */,
+				A004879C1FBFE7E400EB5FE6 /* FakePlaylistView.swift */,
+				A00487A01FBFEAFA00EB5FE6 /* FakePlaylistPresenter.swift */,
+				A004879E1FBFE80D00EB5FE6 /* PlaylistPresenterTests.swift */,
+			);
+			path = PlaylistPresenterTests;
 			sourceTree = "<group>";
 		};
 		A01700171FBCC0BF00BB262F = {
@@ -565,11 +585,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A00487A11FBFEAFA00EB5FE6 /* FakePlaylistPresenter.swift in Sources */,
 				A004878C1FBFDA7300EB5FE6 /* PlaylistTests.swift in Sources */,
 				A00487941FBFE41200EB5FE6 /* FakePlaylistOutputDataManager.swift in Sources */,
 				A00487981FBFE4F200EB5FE6 /* PlaylistInteractorTests.swift in Sources */,
 				A00487921FBFE2B200EB5FE6 /* FakePlaylistDataManager.swift in Sources */,
+				A004879F1FBFE80D00EB5FE6 /* PlaylistPresenterTests.swift in Sources */,
 				A004878E1FBFE14000EB5FE6 /* VideoTests.swift in Sources */,
+				A004879B1FBFE7D200EB5FE6 /* FakePlaylistInteractor.swift in Sources */,
+				A004879D1FBFE7E400EB5FE6 /* FakePlaylistView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
