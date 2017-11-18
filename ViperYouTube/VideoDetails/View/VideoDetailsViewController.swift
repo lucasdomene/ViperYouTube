@@ -11,11 +11,15 @@ import PKHUD
 
 class VideoDetailsViewController: UIViewController {
     
+    @IBOutlet weak var videoImageView: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
+    
     var presenter: VideoPresenterProtocol?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter?.viewDidLoad()
+        title = "Details"
     }
     
 }
@@ -23,7 +27,10 @@ class VideoDetailsViewController: UIViewController {
 extension VideoDetailsViewController: VideoViewProtocol {
     
     func showVideoDetails(_ video: Video) {
-        // configure view
+        titleLabel?.text = video.title
+        let url = URL(string: video.thumbnail)!
+        let placeholderImage = #imageLiteral(resourceName: "placeholder.png")
+        videoImageView?.af_setImage(withURL: url, placeholderImage: placeholderImage)
     }
     
     func showError() {

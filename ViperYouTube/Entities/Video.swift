@@ -19,7 +19,7 @@ extension Video: Mappable {
     init?(map: Map) {}
     
     mutating func mapping(map: Map) {
-        id <- map["id"]
+        id <- map["snippet.resourceId.videoId"]
         title <- map["snippet.title"]
         thumbnail <- map["snippet.thumbnails.medium.url"]
     }
