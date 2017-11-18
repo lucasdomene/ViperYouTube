@@ -13,11 +13,13 @@ class PlaylistPresenterTests: XCTestCase {
     
     var fakeInteractor = FakePlaylistInteractor()
     var fakePresenter = FakePlaylistPresenter()
+    var fakeView = FakePlaylistView()
     
     override func setUp() {
         super.setUp()
         
         fakeInteractor.presenter = fakePresenter
+        fakeView.presenter = fakePresenter
     }
     
     override func tearDown() {
@@ -33,6 +35,16 @@ class PlaylistPresenterTests: XCTestCase {
     func testPresenterWhenReceivingAnError() {
         fakeInteractor.onError()
         XCTAssertTrue(fakePresenter.errorReturned)
+    }
+    
+    func testPresenterWhenCallingViewDidLoadOnView() {
+        fakeView.viewDidLoad()
+        XCTAssertTrue(fakePresenter.viewDidLoadCalled)
+    }
+    
+    func testPresenterWhenShowDetailsForPlaylistIsCalled() {
+        fakeView.playlistSelected()
+        XCTAssertTrue(fakePresenter.showDetailsForPlaylistCalled)
     }
     
 }

@@ -7,7 +7,18 @@
 //
 
 import Foundation
+@testable import ViperYouTube
 
 class FakePlaylistView {
+    
+    var presenter: PlaylistPresenterProtocol?
+    
+    func viewDidLoad() {
+        presenter?.viewDidLoad()
+    }
+    
+    func playlistSelected() {
+        presenter?.showDetailsForPlaylist(Playlist())
+    }
     
 }
