@@ -28,6 +28,7 @@ extension PlaylistDetailsViewController: PlaylistDetailsViewProtocol {
     func showVideos(_ videos: [Video]) {
         self.videos = videos
         tableView.reloadData()
+        title = "Videos"
     }
     
     func showError() {
